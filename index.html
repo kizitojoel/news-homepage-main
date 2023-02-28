@@ -6,9 +6,18 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://getbootstrap.com/docs/5.2/assets/css/docs.css"
+      rel="stylesheet"
+    />
   
   <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   
   <title>Frontend Mentor | News homepage</title>
 
@@ -21,13 +30,62 @@
 <body>
 
   <div class="container">
-    <nav class="navbar navbar-expand-sm my-3 pl-0 py-4">
+    <!-- <nav class="navbar navbar-expand-sm my-3 pl-0 py-4">
       <img class="ml-0" src="./assets/images/logo.svg" alt="Logo">
       <nav class="ml-auto mr-3 py-3">Home</nav>
       <nav class="mx-3 py-3">New</nav>
       <nav class="mx-3 py-3">Popular</nav>
       <nav class="mx-3 py-3">Trending</nav>
       <nav class="mx-3 py-3">Categories</nav>
+    </nav> -->
+    <nav class="navbar navbar-expand-sm py-4">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.svg" alt=""></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">New</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Popular</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Trending</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </nav>
     <div class="row container-fluid">
       <div class="col-lg-8">
