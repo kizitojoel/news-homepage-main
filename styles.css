@@ -1,1 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*
+{
+    font-family: 'Inter', sans-serif !important;
+    box-sizing: border-box;
+}
+.story
+{
+    display: flex;
+    height: 180px;
+    padding: 1rem;
+}
+.story img{
+    width: 39%;
+    height: 100%;
+}
+.story-right
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.story-right > h3{
+    font-weight: 700;
+    font-size: 19px;
+}
+.bold-section
+{
+    font-weight: 800;
+    font-size: 42px;
+    line-height: normal;
+}

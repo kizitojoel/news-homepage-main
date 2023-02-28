@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  
   <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | News homepage</title>
@@ -17,41 +20,80 @@
 </head>
 <body>
 
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <div class="container">
+    <nav class="navbar navbar-expand-sm my-3 pl-0 py-4">
+      <img class="ml-0" src="./assets/images/logo.svg" alt="Logo">
+      <nav class="ml-auto mr-3 py-3">Home</nav>
+      <nav class="mx-3 py-3">New</nav>
+      <nav class="mx-3 py-3">Popular</nav>
+      <nav class="mx-3 py-3">Trending</nav>
+      <nav class="mx-3 py-3">Categories</nav>
+    </nav>
+    <div class="row container-fluid">
+      <div class="col-lg-8">
 
-  The Bright Future of Web 3.0?
-
-  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-  But is it really fulfilling its promise?
-
-  Read more
-
-  New 
-
-  Hydrogen VS Electric Cars
-  Will hydrogen-fueled cars ever catch up to EVs?
-
-  The Downsides of AI Artistry
-  What are the possible adverse effects of on-demand AI image generation?
-
-  Is VC Funding Drying Up?
-  Private funding by VC firms is down 50% YOY. We take a look at what that means.
-
-  01
-  Reviving Retro PCs
-  What happens when old PCs are given modern upgrades?
-
-  02
-  Top 10 Laptops of 2022
-  Our best picks for various needs and budgets.
-
-  03
-  The Growth of Gaming
-  How the pandemic has sparked fresh opportunities.
+  
+          <picture>
+            <source media="(min-width: 991px)" srcset="assets/images/image-web-3-desktop.jpg">
+            <!-- <source media="(min-width: 300px)" srcset="images/image-product-mobile.jpg"> -->
+            <img class="w-100" src="assets/images/image-web-3-mobile.jpg" alt="imagealttext">
+          </picture>
+      
+        <div class="row mt-3">
+          <div class="col-lg-6 bold-section">The Bright Future of Web 3.0?</div>
+          <div class="col-lg-6">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+              But is it really fulfilling its promise?
+            </p>
+            <button class="button">Read more</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        New
+        <div class="blue-section">
+          Hydrogen VS Electric Cars
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </div>
+        <div class="blue-section">
+          The Downsides of AI Artistry
+          What are the possible adverse effects of on-demand AI image generation?
+        </div>
+        <div class="blue-section">
+          Is VC Funding Drying Up?
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="story col-lg-4">
+        <img src="assets/images/image-retro-pcs.jpg" alt="Retro">
+        <div class="story-right">
+          <div class="number">01</div>
+          <h3>Reviving Retro PCs</h3>
+          What happens when old PCs are given modern upgrades?
+        </div>
+      </div>
+      <div class="story col-lg-4">
+        <img src="assets/images/image-top-laptops.jpg" alt="Top Laptops">
+        <div class="story-right">
+          <div class="number">02</div>
+          <h3>Top 10 Laptops of 2022</h3>
+          Our best picks for various needs and budgets.
+        </div>
+      </div>
+      <div class="story col-lg-4">
+        <img src="assets/images/image-gaming-growth.jpg" alt="Image of Gaming Growth">
+        <div class="story-right">
+          <div class="number">03</div>
+          <h3>The Growth of Gaming</h3>
+          How the pandemic has sparked fresh opportunities.
+        </div>
+      </div>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
